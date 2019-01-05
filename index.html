@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NBA Team Word Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type = "text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <!--The header-->
+    <div class="jumbotron jumbotron-fluid header">
+        <div class="container">
+            <h1 class="display-4">NBA Team Word Guessing Game</h1>
+        </div>
+    </div>
+    <!--The rest of the body is contained in the .background div-->
+    <div class = "background">
+        <!--Background image-->
+        <img class = "background-image" src = "assets/images/nba-background.jpg">
+        <!--The game is played within this bootstrap container-->
+        <div class = "container">
+            <div class = row>
+                <div class = "col-md-6 offset-md-3 game-container">
+                    <div class = "row">
+                        <!--Instructions-->
+                        <div class = "col-md-12 instructions">
+                            Press any key to get started!
+                        </div>
+                    </div>
+                    <div class = "row mt-4">
+                        <div class = "col-md-12">
+                            <!--Shows win total-->
+                            Wins: <span class = "wins"></span>
+                        </div>
+                    </div>
+                    <div class = "row mt-4">
+                        <div class = "col-md-6 offset-md-3">
+                            <!--Shows image of basketball while word is being guessed-->
+                            <img class = "game-image" src = "">
+                        </div>
+                    </div>
+                    <div class = "row mt-4">
+                        <!--The team you have to guess-->
+                        <div class = "col-md-12 game-word">
+                        </div>
+                    </div>
+                    <div class = "row mt-4 btm">
+                        <!--Number of guesses remaining-->
+                        <div class = "col-md-12">
+                            Number of guesses remaining: <span class = "guesses"></span>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <!--Shows message telling you if you've won or lost-->
+                        <div class = "col-md-12 win">
+                        </div>
+                    </div>
+                    <div class = "row mt-4 btm">
+                        <!--Shows the letters you've already guessed-->
+                        <div class = "col-md-12">
+                            Letters already guessed: <span class = "letters-guessed"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
