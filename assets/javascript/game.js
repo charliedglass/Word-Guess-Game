@@ -23,7 +23,7 @@ $(document).ready(function() {
     $(".wins").text(wins)
     
     //Originally shows there are 12 guesses remaining
-    var guesses = 12;
+    var guesses = 7;
     $(".guesses").text(guesses);
 
     //Empty array that will be filled as letters are guessed
@@ -55,22 +55,28 @@ $(document).ready(function() {
                 //Shows all the letters that have been guessed in Uppercase
                 $(".letters-guessed").text(letters_guessed_text);
                 
+                letter_there = false; //Boolean variable that checks if the letter is in the word
+
                 //Checks to see if the letter that's been guessed is in the word, and fills in the word with the letter guessed
                 for (var i = 0; i < team_select.length; i++){
                     if (letter_guess == team_select[i]){
                         temp_word = temp_word+letter_guess;
+                        letter_there = true;
                     }
                     else{
                         temp_word = temp_word+word[i];
                     }
                 };
-            
+                
+                if (letter_there == false){
+                    //Guesses go down 1
+                    guesses--;
+                }
+
                 word = temp_word;
                 game_word.text(word);
 
 
-                //Guesses go down 1
-                guesses--;
                 $(".guesses").text(guesses);
                 var win = "You Lose";
 
@@ -111,7 +117,7 @@ $(document).ready(function() {
                         game_word = $(".game-word");
                         game_word.text(word);
                         
-                        guesses = 12;
+                        guesses = 7;
                         $(".guesses").text(guesses);
 
                         letters_guessed = [];
