@@ -1,4 +1,6 @@
 # Word-Guess-Game: NBA Teams Edition
+Check out the site here: https://charliedglass.github.io/Word-Guess-Game/index.html
+
 This game is a hangman for NBA teams!
 
 You can start playing the game by pressing any of the letter keys (a-z).
